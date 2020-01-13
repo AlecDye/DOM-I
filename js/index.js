@@ -85,13 +85,14 @@ featureText[7].textContent = 'sales@greatidea.io';
 featureText[8].textContent = 'Copyright Great Idea! 2018';
 
 // prepend & append
+const parentElement = document.querySelector('nav');
+
 const firstLink = document.createElement('a');
-firstLink.textContent = "Things!";
-const parentElement = document.querySelector("nav");
+firstLink.textContent = 'Things!';
 parentElement.prepend(firstLink);
 
 const lastLink = document.createElement('a');
-lastLink.textContent = 'Stuff';
+lastLink.textContent = 'Stuff?';
 parentElement.appendChild(lastLink);
 
 
