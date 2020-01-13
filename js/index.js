@@ -59,6 +59,6 @@ links[5].textContent = 'Contact';
 
 // CTA text
 const actionText = document.querySelector('h1');
-actionText.textContent = 'dom is awesome'
+actionText.textContent = 'dom is awesome';
 const buttonText = document.querySelector('button');
-buttonText.textContent = 'Get Started'
+buttonText.textContent = 'Get Started';
