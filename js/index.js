@@ -83,3 +83,18 @@ featureText[5].textContent = '123 Way 456 Street Somewhere, USA';
 featureText[6].textContent = '1 (888) 888-8888';
 featureText[7].textContent = 'sales@greatidea.io';
 featureText[8].textContent = 'Copyright Great Idea! 2018';
+
+// prepend & append
+const firstLink = document.createElement('a');
+firstLink.textContent = "Things!";
+const parentElement = document.querySelector("nav");
+parentElement.prepend(firstLink);
+
+const lastLink = document.createElement('a');
+lastLink.textContent = 'Stuff';
+parentElement.appendChild(lastLink);
+
+
+//colors
+const navLinkColor = document.querySelectorAll('a');
+navLinkColor.forEach(aColor => aColor.style.color = 'green');
