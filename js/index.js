@@ -39,11 +39,30 @@ const siteContent = {
 
 // Images
 // Example: Update the img src for the logo
+// use above given info
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+/*
+//These all do the same thing
+
+for (let i = 0, i < 6, i++) {
+  navText[i].textContent = siteContent.nav[`nav-item-${i + 1}`];
+}
+
+for (let i = 0, i < navWords.length, i++) {
+  navText[i].textContent = navWords[i];
+}
+
+Object.keys(siteContent.nav).length;
+*/
+
+
+
 // CTA code image
 const actionImage = document.querySelector('#cta-img');
 actionImage.src = "../img/header-img.png";
+
 // Feature image
 const featureImage = document.querySelector('#middle-img');
 featureImage.src = "../img/mid-page-accent.jpg";
@@ -96,6 +115,9 @@ lastLink.textContent = 'Stuff?';
 parentElement.appendChild(lastLink);
 
 
-//colors
+// colors
 const navLinkColor = document.querySelectorAll('a');
 navLinkColor.forEach(aColor => aColor.style.color = 'green');
+
+// stretch
+actionText.style.color = 'blue';
